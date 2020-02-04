@@ -36,11 +36,11 @@ def display_all_results(url):
         print json.dumps(results, indent=4, sort_keys=True)
 
 def grab_project_names(url):
-    temp_ids = [] 
+    project_name = [] 
     j = get_json(url) 
     for temp in j['results']:
-          temp_ids.append(temp['name'])
-    print temp_ids
+          project_name.append(project['name'])
+    print project_name
       
       
 
