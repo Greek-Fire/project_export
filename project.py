@@ -38,8 +38,8 @@ def display_all_results(url):
 def grab_project_names(url):
     project_name = [] 
     j = get_json(url) 
-    for temp in j['results']:
-          project_name.append(project['name'])
+    for proj in j['results']:
+          project_name.append(proj['name'])
     print project_name
       
       
